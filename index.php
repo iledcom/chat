@@ -8,8 +8,12 @@
 	
 </head>
 <body>
-	<form action="">
-		<div id="chat-result" class="chat-result"></div>
+	<form id="chat" action="">
+		<div id="chat-result" class="chat-result">
+			<input type="text" name="chat-user" id="chat-user" placeholder="Name">
+			<input type="text" name="chat-message" id="chat-message" placeholder="Message">
+			<input type="submit" value="Send">
+		</div>
 	</form>
 	<footer>
 		<script src="http://code.jquery.com/jquery-1.12.4.js"></script>

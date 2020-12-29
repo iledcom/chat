@@ -24,4 +24,18 @@ jQuery(document).ready(function($){
 
 	}
 
+	$('#chat').on('submit', function(){
+
+		var message = {
+			chat_message:$('#chat-message').val(),
+			chat_user:$('#chat-user').val(),
+		}
+
+		$('#chat-user').attr('type', 'hidden');
+
+		socket.send(JSON.stringify(message));
+
+		return false;
+	});
+
 });
